@@ -1,0 +1,32 @@
+name: crystalmath
+version: 1.0.0
+main: dev.crystalmath.crystalmath.CrystalMathPlugin
+api-version: "1.21"
+author: CrystalMath Dev Team
+description: Combined AmethystControl, BeaconBridge, and Claimer systems.
+commands:
+  amethyst:
+    description: Controls amethyst minting and ledger maintenance.
+    usage: /<command> [mint|cap|info|validate]
+    permission: crystalmath.amethyst
+  claims:
+    description: Manage beacon claims.
+    usage: /<command>
+    permission: crystalmath.claims
+  geodeclaim:
+    description: Admin-only geode claiming commands.
+    usage: /<command> [spawn|list|remove]
+    permission: crystalmath.geode
+permissions:
+  crystalmath.amethyst:
+    description: Access to amethyst minting commands.
+    default: op
+  crystalmath.claims:
+    description: Access to claim commands and GUI.
+    default: true
+  crystalmath.claims.admin:
+    description: Access to administrative claim tools.
+    default: op
+  crystalmath.geode:
+    description: Access to admin-only geode claiming commands.
+    default: op

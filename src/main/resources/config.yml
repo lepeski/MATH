@@ -1,0 +1,27 @@
+amethyst:
+  max-minted: 64
+  item-name: "§dMinted Amethyst Crystal"
+  item-lore:
+    - "§7Forged under watchful eyes."
+    - "§8Ledger tracked"
+  mint-sound: ENTITY_EXPERIENCE_ORB_PICKUP
+  drop-on-full-inventory: true
+beacon:
+  recipe-enabled: true
+claimer:
+  default-radius: 32
+  deny-overlap: true
+  show-claim-messages: true
+  admin-gui-title: "Crystal Claims"
+  admin-gui-size: 54
+  tp-height: 2
+geodes:
+  cluster-radius: 4
+  outer-block: SMOOTH_BASALT
+  middle-block: CALCITE
+  core-block: AMETHYST_BLOCK
+logging:
+  amethyst: true
+  beacon: true
+  claimer: true
+  geodes: true
